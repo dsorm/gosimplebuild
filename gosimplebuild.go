@@ -59,13 +59,6 @@ func main() {
 			if cmdOutput, err := cmd.CombinedOutput(); err != nil {
 				fmt.Printf(string(cmdOutput))
 			}
-			/*
-				fmt.Println("Stripping...")
-				if output, err := exec.Command("strip", executableName).CombinedOutput(); err != nil {
-					fmt.Printf(string(output))
-				}
-			*/
-
 		}
 		fmt.Println("Done!")
 	} else {
